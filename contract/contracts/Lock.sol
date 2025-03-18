@@ -32,7 +32,7 @@ contract Lock {
 
         owner.transfer(address(this).balance);
     }
-    
+
     function deposit() public payable {
         require(msg.value > 0, "Deposit amount must be greater than zero");
 
